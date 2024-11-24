@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/CNG/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CNG</title>
+  <link rel="stylesheet" crossorigin href="/CNG/assets/index-D4aunSfT.css">
+</head>
+<!-- bg-[#B6D4C5] text-[#F7F0E5]  bg-[#58554E] bg-color_2a-->
+
+<body class="bg-gradient-to-tr from-color_3b via-color_3a to-color_3c min-h-screen">
+
+  <div class="bg-gray-800 text-white sm:bg-gray-300 sm:text-black
+          p-10 mx-auto max-w-lg mt-10
+      rounded-md shadow-2xl sm:shadow-xl">
+    <div>
+      <h2 class="font-bold">CNG_Calc</h2>
+      <desc class="text-gray-400 ">
+        A simple calculator for CNG fuel efficiency.
+      </desc>
+    </div>
+
+    <form class="mt-4 space-y-3 ">
+      <!-- form-input, form-label these are customized
+          Tailwind_css by us in ./assets/css/main.css -->
+
+      <div>
+        <label for="trip-distance" class="form-label">
+          Trip distance (km) <span class="text-rose-600">*</span>
+          <input name="" id="trip-distance" type="number" placeholder="Trip distance" class="form-input" required>
+        </label>        
+      </div>
+
+
+      <div>
+        <label for="fuel-economy" class="form-label">Fuel-economy
+          <span class="text-rose-600">*</span>
+          <input name="" id="fuel-economy" type="number" placeholder="Fuel economy (L/100km)" class="form-input" required>
+        </label>
+      </div>
+
+      <div>
+        <label for="fuel-price" class="form-label">Fuel price ($/L) <span class="text-rose-600">*</span>
+          <input name="" id="fuel-price" type="number" placeholder="Fuel price ($/L)" value="101" class="form-input" required>
+        </label>
+      </div>
+
+      <div class="flex  justify-end">
+        <button id="calculate-button"
+        class="px-4 py-2  bg-gradient-to-tr text-white rounded-md  hover:bg-gradient-to-br animate-pulse"
+        onclick="calculateFuelEfficiency()">
+        Calculate
+      </button>
+      </div>
+      
+    </form>
+
+  </div>
+
+</body>
+
+</html>
