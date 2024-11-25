@@ -16,7 +16,8 @@
           p-10 mx-auto max-w-lg mt-10
       rounded-md shadow-2xl sm:shadow-xl">
     <div>
-      <h2 class="font-bold">CNG_Calc</h2>
+      <h1>Welcome_ <span class="" id="guest-name" title=""></span>,</h1>
+      <h3 class="font-bold">CNG_Calc</h3>
       <desc class="text-gray-400 ">
         A simple calculator for CNG fuel efficiency.
       </desc>
@@ -47,18 +48,41 @@
         </label>
       </div>
 
+      <div>
+        <label for="result" class="form-label">
+          Result: <span id="result"></span>
+        </label>
+      </div>
+
+      
+      
+      <!-- <div>
+        <label for="fuel-efficiency" class="form-label">
+          Fuel efficiency (km/L)
+        </label>
+        <input name="" id="fuel-efficiency" type="text" placeholder="Fuel efficiency (km/L)" readonly class="form-input">
+      </div>
+
+      
+      <div>
+        <label for="fuel-cost" class="form-label">
+          Fuel cost ($)
+        </label>
+        <input name="" id="fuel-cost" type="text" placeholder="Fuel cost ($)" readonly class="form-input">
+      </div>-->
+
       <div class="flex  justify-end">
         <button id="calculate-button"
         class="px-4 py-2  bg-gradient-to-tr text-white rounded-md  hover:bg-gradient-to-br animate-pulse"
         onclick="calculateFuelEfficiency()">
         Calculate
       </button>
-      </div>
+      </div> 
       
     </form>
 
   </div>
-
+  <script type='module' src="./assets/JS/main.js"></script>
 </body>
 
 </html>
